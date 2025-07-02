@@ -1,0 +1,255 @@
+/* Unified page container for all pages */
+.page-container {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  margin: var(--spacing-lg) 0;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-container h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-container h2 {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-container h3 {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.page-container ul,
+.page-container ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-container li {
+  margin-bottom: 0.5rem;
+}
+
+.page-container a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.page-container a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.page-header {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.page-header .hero-logo {
+  max-width: 150px;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-content {
+  margin-top: var(--spacing-md);
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  text-decoration: none !important;
+  color: white !important;
+}
+
+/* Card styles for consistent cards across the site */
+.content-card {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--border-color);
+}
+
+/* Special styling for cards that are used in grid layouts */
+.grid-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.grid-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow-hover);
+  text-decoration: none;
+}
+
+/* Grid layout for cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+/* Tags styling */
+.tag {
+  display: inline-block;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.tag:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.tag i {
+  margin-right: 0.25rem;
+}
+
+/* Mission cards for the About page */
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+}
+
+.mission-card {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+}
+
+.mission-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.mission-card p {
+  margin-bottom: 0;
+}
+
+/* Help box for the contributing page */
+.help-box {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  border-left: 4px solid var(--primary-color);
+}
+
+.help-box h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.github-link {
+  display: inline-block;
+  background-color: #24292e;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.github-link:hover {
+  background-color: #1a1f23;
+  text-decoration: none !important;
+}
+
+/* Code block for the contribute page */
+.code-block {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  font-family: var(--font-mono);
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    padding: var(--spacing-md);
+  }
+  
+  .page-container h1 {
+    font-size: 2rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+  }
+}

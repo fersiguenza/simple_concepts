@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="page-container">
+  <article class="post">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+      <div class="meta">
+        <span class="date"><i class="far fa-calendar-alt"></i> {{ page.date | date: "%B %d, %Y" }}</span>
+        <span class="author"><i class="fas fa-user"></i> {{ page.author }}</span>
+      </div>
+      
+      <div class="tags">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/categories-and-tags/?tag={{ tag | slugify }}" class="tag"><i class="fas fa-tag"></i> {{ tag }}</a>
+        {% endfor %}
+      </div>
+    </header>
+    
+    <div class="page-content">
+      {{ content }}
+    </div>
+    
+    <div class="content-card">
+      <h3><i class="fas fa-code-branch"></i> Improve this post</h3>
+      <p>Found a mistake or want to improve this post? 
+        <a href="https://github.com/yourusername/SimpleConcepts/edit/main/{{ page.path }}" class="btn-primary">
+          <i class="fab fa-github"></i> Edit this page on GitHub
+        </a>
+      </p>
+    </div>
+  </article>
+</div>
+    {{ content }}
+  </div>
+  
+  <div class="contribute">
+    <div class="contribute-inner">
+      <h3><i class="fas fa-code-branch"></i> Improve this post</h3>
+      <p>Found a mistake or want to improve this post? 
+        <a href="https://github.com/yourusername/SimpleConcepts/edit/main/{{ page.path }}" class="contribute-link">
+          <i class="fab fa-github"></i> Edit this page on GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

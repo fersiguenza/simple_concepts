@@ -1,0 +1,30 @@
+# SimpleConcepts Files to Ignore
+
+# Jekyll files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Mac OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ruby files
+.bundle/
+vendor/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,31 @@
+/* Lazy loading styles for tags and categories pages */
+.lazy-section {
+  opacity: 0;
+  transform: translateY(20px);
+  overflow: hidden;
+  max-height: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+}
+
+.section-container {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 5000px; /* Large enough to contain content */
+  transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+}
+
+.lazy-counter {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-md) 0;
+}
+
+/* Ensure body classes exist for the lazy-load script */
+.page-tags h1,
+.page-categories h1 {
+  margin-bottom: var(--spacing-md);
+}

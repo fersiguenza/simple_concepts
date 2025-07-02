@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="{{ "/assets/favicon/favicon.ico" | relative_url }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/assets/favicon/favicon.ico" | relative_url }}" type="image/x-icon">
+  
+  {% seo %}
+</head>
+<body class="page-{% if page.permalink %}{{ page.permalink | remove: '/' }}{% else %}{{ page.layout }}{% endif %}">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ "/" | relative_url }}">
+          <img src="{{ "/assets/logo.png" | relative_url }}" alt="{{ site.title }}" class="site-logo">
+          {{ site.title }}
+        </a>
+      </h1>
+      <nav class="site-nav">
+        <a href="{{ "/" | relative_url }}" class="nav-link{% if page.permalink == '/' %} active{% endif %}"><i class="fas fa-home"></i> Home</a>
+        <a href="{{ "/categories-and-tags" | relative_url }}" class="nav-link{% if page.permalink == '/categories-and-tags/' %} active{% endif %}"><i class="fas fa-folder-tree"></i> Browse</a>
+        <a href="{{ "/easy-contribute" | relative_url }}" class="nav-link{% if page.permalink == '/easy-contribute/' %} active{% endif %}"><i class="fas fa-pencil-alt"></i> Contribute</a>
+        <a href="{{ "/about" | relative_url }}" class="nav-link{% if page.permalink == '/about/' %} active{% endif %}"><i class="fas fa-info-circle"></i> About</a>
+      </nav>
+      <div class="header-search" id="header-search-container">
+        <div class="search-wrapper">
+          <input type="text" id="header-search-input" placeholder="Search..." aria-label="Search">
+          <button id="search-button" aria-label="Submit search"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="search-results-dropdown">
+          <ul id="header-results-container"></ul>
+        </div>
+      </div>
+      <button class="mobile-menu-button" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>SimpleConcepts</h3>
+          <p>Making complex concepts simple and accessible to everyone.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="{{ "/" | relative_url }}"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="{{ "/categories-and-tags" | relative_url }}"><i class="fas fa-folder-tree"></i> Browse</a></li>
+            <li><a href="{{ "/easy-contribute" | relative_url }}"><i class="fas fa-pencil-alt"></i> Contribute</a></li>
+            <li><a href="{{ "/about" | relative_url }}"><i class="fas fa-info-circle"></i> About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ site.time | date: '%Y' }} SimpleConcepts. Licensed under <a href="https://github.com/SimpleConcepts/SimpleConcepts/blob/main/LICENSE" class="license-link" target="_blank">MIT License</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ "/assets/js/search-index.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/cache-refresh.js" | relative_url }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const siteNav = document.querySelector('.site-nav');
+      
+      if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', function() {
+          siteNav.classList.toggle('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

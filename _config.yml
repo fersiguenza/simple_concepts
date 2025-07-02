@@ -1,0 +1,53 @@
+title: SimpleConcepts
+description: Simple explanations for complex concepts across technology, science, and more
+baseurl: ""
+url: ""
+
+# Include files from these folders
+include:
+  - _pages
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  explanations:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "explanations"
+    values:
+      layout: "explanation"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE

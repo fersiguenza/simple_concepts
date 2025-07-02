@@ -1,0 +1,60 @@
+.tags-container {
+  margin-top: 2rem;
+}
+
+.tag-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tag-name {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tag-posts {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tag-posts li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.tag-posts li:last-child {
+  border-bottom: none;
+}
+
+.tag-posts a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tag-posts a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .tag-section {
+    padding: 1rem;
+  }
+  
+  .tag-name {
+    font-size: 1.3rem;
+  }
+}

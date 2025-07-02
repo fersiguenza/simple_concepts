@@ -1,0 +1,88 @@
+/* Styles for combined Categories and Tags page */
+.page-categories-and-tags h1 {
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.browse-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.browse-header .title-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.browse-header .title-with-image div {
+  flex: 1;
+}
+
+.browse-header .title-with-image .feature-image {
+  max-width: 110px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.browse-header .intro-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.browse-header .feature-image {
+  max-width: 60px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.browse-header .intro-section div {
+  flex: 1 1 80%;
+}
+
+.page-categories-and-tags .section {
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+}
+
+.page-categories-and-tags .tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-categories-and-tags .category-tag {
+  font-size: 1.1rem;
+  padding: 8px 15px;
+}
+
+.page-categories-and-tags .related-tags {
+  background-color: var(--light-gray);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
+
+.page-categories-and-tags .back-button {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-categories-and-tags .category-section {
+  margin-top: var(--spacing-lg);
+}
+
+/* Ensure transitions are smooth */
+.page-categories-and-tags .section,
+.page-categories-and-tags .category-section {
+  transition: all 0.3s ease;
+}

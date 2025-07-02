@@ -1,0 +1,157 @@
+/* Code styling */
+code {
+  font-family: var(--font-mono);
+  background-color: var(--light-gray);
+  padding: 0.2em 0.4em;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9em;
+  color: var(--primary-dark);
+}
+
+pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1.25em;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: 1.8em 0;
+  font-size: 0.9em;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+pre::before {
+  content: attr(data-language);
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 0.75rem;
+  background: rgba(0,0,0,0.3);
+  padding: 2px 8px;
+  border-bottom-left-radius: 4px;
+}
+
+/* For diagrams or graphical elements in code blocks */
+pre.diagram {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  padding: var(--spacing-lg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+/* Enhanced Code and Diagram Styles */
+.explanation-content pre {
+  position: relative;
+  margin: var(--spacing-lg) 0;
+}
+
+/* Style for code blocks in explanations */
+.explanation-content pre[class*="language-"] {
+  background-color: #1e293b;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  tab-size: 2;
+  max-height: 600px;
+}
+
+/* Style for ASCII art or diagrams in code blocks */
+.explanation-content pre.diagram {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  padding: var(--spacing-lg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+/* Style for inline diagrams */
+.diagram-container {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+/* Add nice styling to tables */
+.explanation-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+  font-size: 0.95rem;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--border-color);
+}
+
+.explanation-content th {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.explanation-content td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.explanation-content tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Style for blockquotes */
+.explanation-content blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--primary-light);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.explanation-content blockquote p {
+  margin: 0;
+}
+
+/* Special styling for note blocks */
+.note {
+  background-color: rgba(76, 201, 240, 0.1);
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.5rem;
+  margin: var(--spacing-lg) 0;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.warning {
+  background-color: rgba(251, 191, 36, 0.1);
+  border-left: 4px solid var(--warning-color);
+  padding: 1rem 1.5rem;
+  margin: var(--spacing-lg) 0;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}

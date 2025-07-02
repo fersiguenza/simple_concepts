@@ -1,0 +1,152 @@
+/* Styles for feature images */
+.feature-image {
+  max-width: 120px;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
+.intro-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.intro-section .feature-image {
+  margin-right: 15px;
+  margin-top: 0;
+  flex: 0 0 auto;
+}
+
+/* Page-specific image adjustments */
+.explanation .feature-image {
+  max-width: 100px;
+}
+
+.page-categories-and-tags .feature-image {
+  max-width: 100px;
+}
+
+.intro-section .intro {
+  flex: 1 1 300px;
+}
+
+/* Styles for tags and contributions section */
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+
+.tag:hover {
+  background: #e0e0e0;
+  color: var(--primary-color);
+}
+
+.tag i {
+  margin-right: 4px;
+  font-size: 0.85em;
+}
+
+.contribute {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.contribute-inner {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.contribute h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.contribute-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.contribute-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Post and explanation shared styles */
+.post, .explanation {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meta {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tags {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Related explanations */
+.related-explanations {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.related-explanations h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.related-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.related-list li {
+  margin-bottom: 0.5rem;
+}
+
+.related-list a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.related-list a:hover {
+  text-decoration: underline;
+}
