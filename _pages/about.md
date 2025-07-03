@@ -129,7 +129,7 @@ Explanation of why this concept is important and where it's used.
       <div class="help-box">
         <h4>Need Help?</h4>
         <p>If you're new to GitHub or need assistance, feel free to open an issue first describing the explanation you'd like to add, and we'll help guide you through the process.</p>
-        <a href="https://github.com/yourusername/SimpleConcepts/issues/new" class="github-link"><i class="fab fa-github"></i> Open an Issue</a>
+        <a href="https://github.com/fersiguenza/simple_concepts/issues/new" class="github-link"><i class="fab fa-github"></i> Open an Issue</a>
       </div>
 
       <h4>Review Process</h4>
@@ -144,10 +144,10 @@ Explanation of why this concept is important and where it's used.
 
       <div class="contribute">
         <div class="contribute-inner">
-          <img src="/assets/logo.png" alt="SimpleConcepts Logo" class="contribute-logo">
+          <img src="../assets/logo.png" alt="SimpleConcepts Logo" class="contribute-logo">
           <h3><i class="fas fa-code-branch"></i> Join our community</h3>
           <p>Ready to contribute? 
-            <a href="https://github.com/yourusername/SimpleConcepts" class="contribute-link">
+            <a href="https://github.com/fersiguenza/simple_concepts" class="contribute-link">
               <i class="fab fa-github"></i> Visit our GitHub repository
             </a>
           </p>
