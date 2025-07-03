@@ -36,8 +36,8 @@ layout: default
       <div class="related-explanations">
         <h3>Related Explanations</h3>
         <ul class="related-list">
-          {% assign related_posts = site.explanations | where_exp:"item", "item.url != page.url" | where_exp:"item", "item.tags and page.tags and item.tags.size > 0 and page.tags.size > 0" | sample: 3 %}
-          {% for related in related_posts %}
+          {% assign other_explanations = site.explanations | where_exp: "item", "item.url != page.url" %}
+          {% for related in other_explanations limit: 3 %}
             <li><a href="{{ related.url | relative_url }}">{{ related.title }}</a></li>
           {% endfor %}
         </ul>

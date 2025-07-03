@@ -22,6 +22,7 @@ Desktop.ini
 # Ruby files
 .bundle/
 vendor/
+Gemfile.lock
 
 # IDE files
 .idea/

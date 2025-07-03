@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+# Use the github-pages gem for GitHub Pages compatibility
+gem "github-pages", group: :jekyll_plugins
 gem "minima", "~> 2.5"
 gem "webrick", "~> 1.7"
 gem "csv"

@@ -58,7 +58,7 @@ permalink: /about/
         <div class="contribution-option">
           <h3><i class="fas fa-code"></i> For Developers</h3>
           <p>If you're comfortable with GitHub and Markdown, you can contribute directly through our repository.</p>
-          <a href="https://github.com/yourusername/SimpleConcepts" class="option-link">Contribute via GitHub</a>
+          <a href="https://github.com/fersiguenza/simple_concepts" class="option-link">Contribute via GitHub</a>
         </div>
         <div class="contribution-option">
           <h3><i class="fas fa-magic"></i> For Everyone Else</h3>
