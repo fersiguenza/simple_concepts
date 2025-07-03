@@ -12,7 +12,7 @@ permalink: /categories-and-tags/
           <h1>Browse</h1>
           <p class="browse-intro">Explore our collection of explanations by category or tag. Find the perfect explanation for your needs by navigating through our organized content structure.</p>
         </div>
-        <img src="/assets/images/ligth.png" alt="Light bulb illustration" class="feature-image">
+        <img src="../assets/images/ligth.png" alt="Light bulb illustration" class="feature-image">
       </div>
     </div>
 

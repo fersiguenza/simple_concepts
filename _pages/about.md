@@ -13,7 +13,7 @@ permalink: /about/
     <div class="page-content">
       <div class="title-with-image">
         <h2>Our Story</h2>
-        <img src="/assets/images/ligth.png" alt="Light bulb illustration" class="feature-image">
+        <img src="../assets/images/ligth.png" alt="Light bulb illustration" class="feature-image">
       </div>
       <p>SimpleConcepts was born from a simple observation: complex concepts are often explained in overly complicated ways. We believe in making knowledge accessible to everyone through clear, concise explanations.</p>
 

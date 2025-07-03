@@ -13,7 +13,7 @@ permalink: /easy-contribute/
     <div class="page-content">
       <div class="title-with-image" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
         <p class="intro" style="flex: 1; margin-right: 20px;">You don't need to know Git or Markdown to contribute to SimpleConcepts. Use this form to create your explanation, and we'll handle the technical details for you!</p>
-        <img src="/assets/images/write.png" alt="Computer illustration" class="feature-image" style="max-width: 120px; flex-shrink: 0;">
+        <img src="../assets/images/write.png" alt="Computer illustration" class="feature-image" style="max-width: 120px; flex-shrink: 0;">
       </div>
 
       <div id="contribute-form" class="contribute-form">
