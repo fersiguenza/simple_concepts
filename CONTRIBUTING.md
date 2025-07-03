@@ -17,6 +17,10 @@ Our detailed contribution guidelines are available on our website. For the local
    - Related concepts
 3. **Submit your contribution**: Create a pull request with your explanation
 
+## Author Attribution
+
+We automatically track and display article authors. See [AUTHOR_ATTRIBUTION.md](AUTHOR_ATTRIBUTION.md) or visit the [Author Attribution Guide](https://fersiguenza.github.io/simple_concepts/author-attribution/) on our website for details on how to properly attribute authorship in your contributions.
+
 ## Explanation Template
 
 Create a new Markdown file in the appropriate category folder under `_explanations/` with the following structure:
@@ -25,6 +29,10 @@ Create a new Markdown file in the appropriate category folder under `_explanatio
 ---
 layout: explanation
 title: [Concept Name]: A Simple Guide
+author: "Your Name"
+authors:
+  - name: "Your Name"
+    github: "your-github-username"
 category: [Category - e.g., Programming, Cloud, DevOps]
 tags: [tag1 tag2 tag3]
 ---

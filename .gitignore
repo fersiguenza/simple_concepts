@@ -1,4 +1,5 @@
 # SimpleConcepts Files to Ignore
+notes/
 
 # Jekyll files
 _site/

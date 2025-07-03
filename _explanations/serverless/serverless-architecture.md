@@ -1,6 +1,9 @@
 ---
 title: "Serverless Architecture Explained"
-author: "Fernando Sigüenza"
+author: "Fer Sigüenza"
+authors:
+  - name: "Fer Sigüenza"
+    github: "fersiguenza"
 date: 2025-07-02
 category: "Cloud"
 tags: ["serverless", "cloud-computing", "architecture", "faas"]
@@ -50,6 +53,6 @@ Serverless architectures offer several benefits:
 
 ## Related concepts
 
-- [Function as a Service (FaaS)](/explanations/cloud/faas.md)
-- [AWS Lambda](/explanations/cloud/aws-lambda.md)
-- [Backend as a Service (BaaS)](/explanations/cloud/baas.md)
+- [Function as a Service (FaaS)](/explanations/serverless/faas.md)
+- [AWS Lambda](/explanations/aws/lambda.md)
+- [Backend as a Service (BaaS)](/explanations/serverless/baas.md)

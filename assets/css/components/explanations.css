@@ -39,6 +39,17 @@
   margin-right: 0.5rem;
 }
 
+.meta a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.meta a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

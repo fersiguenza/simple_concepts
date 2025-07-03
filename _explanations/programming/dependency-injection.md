@@ -1,6 +1,9 @@
 ---
 title: "Dependency Injection: A Simple Guide"
-author: "Fernando Sigüenza"
+author: "Fer Sigüenza"
+authors:
+  - name: "Fer Sigüenza"
+    github: "fersiguenza"
 date: 2025-07-02
 category: "Programming"
 tags: ["programming", "design-patterns", "solid-principles"]

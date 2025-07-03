@@ -80,9 +80,9 @@
         console.error('Error loading search index:', error);
         // Try an alternative path - for both local development and GitHub Pages
         const alternativePaths = [
-          window.location.origin + '/SimpleConcepts/search.json.liquid',
+          window.location.origin + '/simple_concepts/search.json.liquid',
           window.location.pathname + 'search.json.liquid',
-          '/search.json.liquid'
+          '../../search.json.liquid'
         ];
         
         console.log('Trying alternative paths:', alternativePaths);
